@@ -1,0 +1,40 @@
+FLEX-DIRECTION
+
+main cross axes:
+if flex-direction: row main = left-right | cross = top-bottom | flex-basis is width 
+if flex-directoin: column main = top-bottom | cross = left-right | flex-basis is height
+
+Moving content around: 
+justify-content : MAIN axis 
+align-items: CROSS axis
+
+content: is a group of items and is aligned to the MAIN axis - warzywa na szaszłyku
+items are individual, they can be moved seperately across CROSS axis - winogrona nabite na wykałaczki leżące w misce
+so,
+justify = main axis
+align = cross axis
+&
+align-self: usable for only one child
+
+HYPOTHETICAL SIZE IN FLEXBOX
+
+when using flow layout width and height are a hard constrain, but.
+For flexbox, width of the item is just a suggestion, because the container is what allows child to exist, so even with a specified width - it could be smaller
+
+MINIMAL SIZE
+
+A child item wont shrink below it's minimum size, rather it will overflow the container
+to prevent the overlaping, we can use min-width:0 on child item, which basically means "shrink as much as you need its too late to show you all"
+But you need to use it with care, there's a great reward and risk, especially with text, especially with long words
+
+
+WRAPPING
+normally item wont wrap, they will shrin, with /flex-wrap: 1;/, they will rather wrap to another line, before shrinking from its hypothetical size
+
+Now,
+align-items still works the cross axis, but every row is a small flexbox of it's own
+
+To align all the rows inside the container:
+align-content - works like align-items but with whole content instead of one item
+
+CSS EXERCIES FLEX
