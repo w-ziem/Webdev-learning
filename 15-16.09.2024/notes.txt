@@ -1,0 +1,26 @@
+JAVASCRIPT 1
+
+variables:
+let - changeable
+const - not changeable
+var - is an old way of declaring variables, similar to let, not used anymore tbh
+
+each browser tab has its own execution environment, that means that code in one tab cannot directly affect another tab. It's a security measure.
+(there are ways of send code and data between different website/tabs safely but they are more advanced)
+
+Js code is run from top to bottom, so erros like "Cannot acces "xyz" before initialization" can occur 
+
+Interpreted vs compiled code:
+Interpreted: runs from top to bottom, just as it's written. The results are immediately returned.
+Compiled: is transfered into different code before running - machine code, binary, therefore they're faster
+Js is using just-in-time compiling -> the code is compiled to binary while the scrip is being used, but it's stil called a interpereted language, since the compilation happens at run time, not beforehand
+
+Server-side vs client-side code:
+client: code that is run on client's computer. The code is downloaded and runned in user's browser
+server: code is run on server and only the results are downloaded and displayed in the browser
+
+dynamic code/website means that it has ability to change the content on the website, or for backend - generate new data and send for front end code to display
+Static websites are websites that show the same stuff all the time
+
+Adding inline js to html is a bad practise. Better to use eventListeners
+
